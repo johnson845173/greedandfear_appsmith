@@ -1,0 +1,2 @@
+DELETE FROM website.trade_log
+WHERE id = {{Table1.selectedRow.ID}}

@@ -1,0 +1,2 @@
+SELECT * FROM website.time_frame_master
+ORDER BY time_frame_id ASC 

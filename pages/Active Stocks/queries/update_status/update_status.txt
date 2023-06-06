@@ -1,0 +1,4 @@
+UPDATE website.trade_log
+  SET status_id = {{status_select.selectedOptionValue}}  
+	WHERE id  = {{Table1.selectedRow.id}};
+	

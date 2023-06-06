@@ -1,0 +1,9 @@
+{
+    "path": "{{dropbox_file_upload_api.data.path_lower}}",
+    "settings": {
+        "access": "viewer",
+        "allow_download": true,
+        "audience": "public",
+        "requested_visibility": "public"
+    }
+}

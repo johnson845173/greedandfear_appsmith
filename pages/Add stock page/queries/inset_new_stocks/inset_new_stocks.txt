@@ -1,0 +1,3 @@
+INSERT INTO website.trade_log(
+	stock_name, time_frame, entry_direction, target_1, target_2, stoploss,dropbox_path,public_link,file_id)
+	VALUES ( {{stock_name.inputText}},{{tf_selector.selectedOptionValue}}, {{position_select.selectedOptionValue}}, {{target1.inputText}}, {{target2.inputText}},{{stoploss.inputText}},{{dropbox_file_upload_api.data.path_lower}},{{get_file_link_from_path.data.url}},{{dropbox_file_upload_api.data.id}});

@@ -1,0 +1,9 @@
+select row_number() over(order by tl.created_date desc), 
+tl.stock_name,
+tl.entry_direction,
+tm.time_frame,
+sm.status,
+tl.created_date
+from website.trade_log as tl
+join website.time_frame_master as tm on tm.time_frame_id = tl.time_frame
+join website.status_master as sm on sm.status_id = tl.status_id

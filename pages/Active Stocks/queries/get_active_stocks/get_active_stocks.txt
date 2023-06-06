@@ -1,0 +1,15 @@
+select 
+tl.id,
+tl.stock_name,
+tl.entry_direction,
+tl.target_1,
+tl.target_2,
+tl.stoploss,
+tm.time_frame,
+sm.status,
+sm.status_id,
+tl.public_link
+from website.trade_log as tl
+join website.time_frame_master as tm on tm.time_frame_id = tl.time_frame
+join website.status_master as sm on sm.status_id = tl.status_id
+where tl.status_id = 2 or tl.status_id = 3 or tl.created_date = CURRENT_DATE

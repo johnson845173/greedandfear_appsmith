@@ -1,0 +1,2 @@
+SELECT * FROM website.status_master
+ORDER BY status_id ASC 

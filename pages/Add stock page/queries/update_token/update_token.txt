@@ -1,0 +1,3 @@
+UPDATE website.dropbox_master
+  SET token = {{token_inp.inputText}}
+  WHERE token_id = 1;
